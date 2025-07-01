@@ -1,38 +1,23 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Mi Wiki con Docsify</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Descripción de tu wiki">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
-</head>
-<body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      // Puedes configurar Docsify aquí. Algunas opciones comunes:
-      // name: 'Mi Proyecto', // Nombre que aparece en la barra lateral
-      // repo: 'tu-usuario/tu-repositorio', // Enlace a tu repositorio GitHub
-      loadSidebar: true, // Cargar _sidebar.md
-      homepage: 'README.md', // Página de inicio por defecto
-      auto2top: true, // Desplazarse al inicio de la página al cambiar de ruta
-      // Opciones para la búsqueda:
-      search: {
-        maxAge: 86400000, // Expira la caché en 1 día, un valor alto para entornos sin build
-        paths: 'auto', // Busca automáticamente en todos los archivos Markdown
-        placeholder: 'Buscar', // Texto del placeholder
-        noData: 'No se encontraron resultados!', // Mensaje sin resultados
-        // search `paths` based on current language
-        // search `pathNames` based on current language
-      },
-      // Si tus archivos Markdown están en una subcarpeta 'docs', descomenta la siguiente línea:
-      basePath: '/docs/', // IMPORTANTE si tus Markdown están en una carpeta 'docs'
-    };
-  </script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/docsify@4/themes/vue.css"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.$docsify = {
+        //...
+      };
+    </script>
+    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   </body>
 </html>
